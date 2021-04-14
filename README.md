@@ -4,27 +4,26 @@ This service is responsible for payments in RoboShop e-commerce app.
 
 This service is written on `Python 3`, So need it to run this app.
 
-CentOS 7 comes with `Python 2` by default. So we need `Python 3` to be installed.
-
-1. Install Python 3
+1. Create a user for running the application 
 
 ```
-# yum install python36 gcc python3-devel -y
+# useradd -m -s /bin/bash roboshop
 ```
 
-2. Create a user for running the application 
-
-```
-# useradd roboshop
-```
-
-3. Download the repo.
+2. Download the repo.
 
 ```
 $ cd /home/roboshop
 $ curl -L -s -o /tmp/payment.zip "https://github.com/zelar-soft-roboshop/payment/archive/main.zip"
 $ unzip /tmp/payment.zip
 $ mv payment-main payment
+```
+
+3. Install Python Dependency Installer 
+
+```
+# apt update
+# apt install python3-pip -y 
 ```
 
 4. Install the dependencies
