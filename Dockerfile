@@ -1,7 +1,6 @@
-FROM        node
+FROM        python:3
 RUN         mkdir /app
 WORKDIR     /app
-COPY        server.js .
-COPY        package.json .
-RUN         npm install
-CMD         [ "node", "server.js" ]
+COPY        payment.ini payment.py rabbitmq.py requirements.txt .
+
+

@@ -1,6 +1,6 @@
 @Library('roboshop') _
 
 docker (
-        COMPONENT             : 'cart',
+        COMPONENT             : 'payment',
         PROJECT_NAME          : "RoboShop"
 )
